@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Login</title>
+    <script src="redireccion.js"></script>
+</head>
+
+<body>
+
+    <h1>CONJUNTO RESIDENCIAL OKAVANGO</h1><br />
+    <div class="en-linea">
+        <a href="index.html">
+            <h3>Inicio</h3>
+        </a>
+        <a href="Nuestro Conjunto.html">
+            <h3>Nuestro Conjunto</h3>
+        </a>
+        <a href="Eventos.html">
+            <h3>Eventos</h3>
+        </a>
+        <a href="Negocios.html">
+            <h3>Negocios</h3>
+        </a>
+        <a href="Login.html">
+            <h3>Login</h3>
+        </a>
+    </div>
+
+
+    <div class="logueo">
+        <h2>Inicio de sesión</h2><br />
+        <form>
+            <label for="rol">Selecciona el Rol:</label><br><br>
+            <select id="rol" name="rol">
+
+                <option value="administrador">Administrador</option>
+                <option value="Propietario">Propietario</option>
+                <option value="Seguridad">Seguridad</option>
+                <option value="Piscina">Piscina</option>
+            </select><br><br>
+
+            <label for="usuario">Usuario:</label><br />
+            <input type="text" id="usuario" name="usuario" required><br />
+
+            <label for="contrasena">Contraseña:</label><br />
+            <input type="password" id="contrasena" name="contrasena" required><br /><br />
+
+            <input type="button" value="   Iniciar   " onclick="redireccionarSegunRol()">
+        </form>
+    </div>
+
+</body>
+
+</html>
